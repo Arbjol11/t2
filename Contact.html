@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SkyTravel</title>
+    <style>
+        /* ======= Body & background ======= */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f9;
+            color: #111;
+        }
+
+        h2 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        /* ======= Contact Form Container ======= */
+        .contact-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 20px;
+        }
+
+        .contact-form {
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        /* ======= Form Fields ======= */
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            resize: vertical;
+            font-size: 14px;
+        }
+
+        .contact-form textarea {
+            min-height: 120px;
+        }
+
+        .contact-form button {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #0056b3;
+        }
+
+        /* ======= Responsive ======= */
+        @media (max-width: 600px) {
+            .contact-form {
+                padding: 30px 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="contact-section">
+        <form class="contact-form">
+            <h2>Na Kontaktoni</h2>
+            
+            <label for="name">Emri</label>
+            <input type="text" id="name" name="name" placeholder="Shkruaj emrin tënd" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Shkruaj email-in tënd" required>
+            
+            <label for="subject">Subjekti</label>
+            <input type="text" id="subject" name="subject" placeholder="Subjekti i mesazhit" required>
+            
+            <label for="message">Mesazhi</label>
+            <textarea id="message" name="message" placeholder="Shkruaj mesazhin këtu..." required></textarea>
+            
+            <button type="submit">Dërgo Mesazhin</button>
+        </form>
+    </section>
+
+</body>
+</html>

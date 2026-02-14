@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SkyTravel</title>
+    <style>
+        /* ======= About Us Section ======= */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f9;
+            color: #111;
+        }
+
+        .about-us {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 80px;
+            gap: 40px;
+            background: #f4f7f9;
+        }
+
+        .about-content {
+            flex: 1;
+        }
+
+        .about-content h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #007bff; /* ngjyra e header-it */
+        }
+
+        .about-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .about-button {
+            padding: 12px 25px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .about-button:hover {
+            background: #0056b3;
+        }
+
+        .about-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        /* ======= Responsive ======= */
+        @media (max-width: 900px) {
+            .about-us {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 20px;
+            }
+
+            .about-image {
+                max-width: 120%;
+                height: auto;
+                border-radius: 12px;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            }
+        }
+        .a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="about-us">
+        <div class="about-content">
+            <h2>Rreth Nesh</h2>
+            <p>
+                Ne jemi <strong>SkyTravel Agency</strong>, partneri juaj i besueshëm për të gjetur dhe prenotuar biletat e avionit në mënyrë të shpejtë dhe të sigurt.
+                Me dekada eksperiencë në industrinë e udhëtimit, ne ofrojmë çmime konkurruese dhe shërbim 24/7 për të bërë çdo udhëtim të paharrueshëm.
+            </p>
+            <p>
+                Qëllimi ynë është t'ju ndihmojmë të fluturoheni drejt destinacioneve tuaja të ëndrrave, pa stres dhe me besueshmëri maksimale.
+                Nga prenotimi i biletave deri te sugjerimet për destinacionin, ne jemi këtu për çdo hap të udhëtimit tuaj.
+            </p>
+            <button class="about-button"><a href="booking.html">Ktheu mbrapa</a></button>
+        </div>
+        <div class="about-image">
+            <img src="c:\Users\User\Downloads\aeroplan.jpg" alt="Fluturim me aeroplan">
+        </div>
+    </section>
+
+</body>
+</html>

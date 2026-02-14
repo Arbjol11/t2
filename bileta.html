@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rezervimi i Biletës</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CARD */
+.container {
+    width: 90%;
+    max-width: 420px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* TITLE */
+h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/* LABELS */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* INPUTS */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* MOBILE IMPROVEMENTS */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 15px;
+    }
+
+    button {
+        font-size: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2 id="title">Rezervim</h2>
+
+    <label>Data e vajtjes</label>
+    <input type="date" id="startDate">
+
+    <label>Data e kthimit</label>
+    <input type="date" id="endDate">
+
+    <label>Ora e nisjes</label>
+    <input type="time" id="time">
+
+    <button onclick="checkout()">Checkout</button>
+</div>
+
+<script>
+const destination = localStorage.getItem("destination");
+const price = localStorage.getItem("price");
+
+document.getElementById("title").textContent =
+    `Rezervim për ${destination} – $${price}`;
+
+function checkout() {
+    const startDate = document.getElementById("startDate").value;
+    const endDate = document.getElementById("endDate").value;
+    const time = document.getElementById("time").value;
+
+    if (!startDate || !endDate || !time) {
+        alert("Ju lutem plotësoni të gjitha fushat!");
+        return;
+    }
+
+    alert(
+        `✅ Bileta juaj është blerë!\n\n` +
+        `📍 Destinacioni: ${destination}\n` +
+        `🛫 Vajtje: ${startDate}\n` +
+        `🛬 Kthim: ${endDate}\n` +
+        `⏰ Ora e nisjes: ${time}\n\n` +
+        `💳 Çmimi: $${price}`
+    );
+
+    localStorage.clear();
+}
+</script>
+
+</body>
+</html>

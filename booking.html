@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="SQ">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Booking-Tickets</title>
+        <link rel="stylesheet" href="stilibooking.css">
+    </head>
+    <body>
+        <script src="scriptbooking.js"></script>
+        <header class="header">
+            <h1 class="logo">SkyTravel</h1>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Kerko destinacionin...">
+                <button onclick="showResult()">🔍</button>
+            </div>
+            <div id="result" style="margin-top:10px; color:#007bff; font-weight:bold;"></div>
+        
+            <ul class="navbar">
+                <li><a href="booking.html"><h2><b>Home</b></h2></a></li>
+                <li><a href="Aboutus.html"><h2><b>About Us</b></h2></a></li>
+                <li><a href="Contact.html"><h2><b>Contact Us</b></h2></a></li>
+            </ul>
+        </header>
+        <br><br>
+        <div class="container">
+            <div class="box">
+                <video autoplay muted loop>
+                    <source src="c:\Users\User\Downloads\Positano,_Amalfi_Coast_Italy_🇮🇹_1080p.mp4" type="video/mp4">
+                </video>            
+                <div class="product-card">
+                    <h2>Itali</h2>
+                    <p>Cmimi i biletes:</p>
+                    <p class="price">$29.99</p>
+                    <button class="color-button" onclick="goToBooking('Itali', 29.99)">Bli tani</button>
+                </div></div>
+            <div class="box">
+                <video autoplay muted loop>
+                    <source src="c:\Users\User\Downloads\paris.mp4.mp4" type="video/mp4">
+                </video> 
+                <div class="product-card">
+                <h2>France</h2>
+                <p>Cmimi i biletes:</p>
+                <p class="price">$49.99</p>
+                <button class="color-button" onclick="goToBooking('France', 49.99)">Bli tani</button>
+            </div></div>
+            <div class="box">
+                <video autoplay muted loop>
+                    <source src="c:\Users\User\Downloads\gjermani.mp4.mp4" type="video/mp4">
+                </video> 
+                <div class="product-card">
+                <h2>Gjermani</h2>
+                <p>Cmimi i biletes:</p>
+                <p class="price">$39.99</p>
+                <button class="color-button" onclick="goToBooking('Gjermani', 39.99)">Bli tani</button>
+            </div></div>
+            <div class="box">
+                <video autoplay muted loop>
+                    <source src="c:\Users\User\Downloads\turqi.mp4.mp4" type="video/mp4">
+                </video> 
+                <div class="product-card">
+                <h2>Turqi</h2>
+                <p>Cmimi i biletes:</p>
+                <p class="price">$69.99</p>
+                <button class="color-button" onclick="goToBooking('Turqi', 69.99)">Bli tani</button>
+            </div></div>
+            <div class="box">
+                <video autoplay muted loop>
+                    <source src="c:\Users\User\Downloads\japoni.mp4.mp4" type="video/mp4">
+                </video>
+                <div class="product-card">
+                <h2>Japoni</h2>
+                <p>Cmimi i biletes:</p>
+                <p class="price">$119.99</p>
+                <button class="color-button"onclick="goToBooking('Japoni', 119.99)">Bli tani</button>
+            </div></div>
+            <div class="box">
+                <video autoplay muted loop>
+                    <source src="c:\Users\User\Downloads\londer.mp4.mp4" type="video/mp4">
+                </video>
+                <div class="product-card">
+                <h2>Londer</h2>
+                <p>Cmimi i biletes:</p>
+                <p class="price">$149.99</p>
+                <button class="color-button" onclick="goToBooking('Londer', 149.99)">Bli tani</button>
+            </div></div>
+            <div class="box">
+                <video autoplay muted loop>
+                    <source src="c:\Users\User\Downloads\spanj.mp4.mp4" type="video/mp4">
+                </video>
+                <div class="product-card">
+                <h2>Spanje</h2>
+                <p>Cmimi i biletes:</p>
+                <p class="price">$449.99</p>
+                <button class="color-button" onclick="goToBooking('Spanje', 449.99)">Bli tani</button>
+            </div></div>
+            <div class="box">
+                <video autoplay muted loop>
+                    <source src="c:\Users\User\Downloads\greqi.mp4.mp4" type="video/mp4">
+                </video>
+                <div class="product-card">
+                <h2>Greqi</h2>
+                <p>Cmimi i biletes:</p>
+                <p class="price">$49.99</p>
+                <button class="color-button" onclick="goToBooking('Greqi', 49.99)">Bli tani</button>
+            </div></div>
+            <div class="box">
+                <video autoplay muted loop>
+                    <source src="c:\Users\User\Downloads\kroaci.mp4.mp4" type="video/mp4">
+                </video>
+                <div class="product-card">
+                <h2>Kroaci</h2>
+                <p>Cmimi i biletes:</p>
+                <p class="price">$249.99</p>
+                <button class="color-button" onclick="goToBooking('Kroaci', 249.99)">Bli tani</button>
+            </div></div>
+            <div class="box">
+                <video autoplay muted loop>
+                    <source src="c:\Users\User\Downloads\machu.mp4.mp4" type="video/mp4">
+                </video>
+                <div class="product-card">
+                <h2>Machu Picchu, Peru</h2>
+                <p>Cmimi i biletes:</p>
+                <p class="price">$999.99</p>
+                <button class="color-button" onclick="goToBooking('Machu Picchu', 999.99)">Bli tani</button>
+            </div></div>
+            <div class="box">
+                <video autoplay muted loop>
+                    <source src="c:\Users\User\Downloads\hawaii.mp4.mp4" type="video/mp4">
+                </video>
+                <div class="product-card">
+                <h2>Hawaii</h2>
+                <p>Cmimi i biletes:</p>
+                <p class="price">$879.99</p>
+                <button class="color-button" onclick="goToBooking('Hawaii', 879.99)">Bli tani</button>
+            </div></div>
+            <div class="box">
+                <video autoplay muted loop>
+                    <source src="c:\Users\User\Downloads\maldive.mp4.mp4" type="video/mp4">
+                </video>
+                <div class="product-card">
+                <h2>Maldive</h2>
+                <p>Cmimi i biletes:</p>
+                <p class="price">$349.99</p>
+                <button class="color-button" onclick="goToBooking('Maldive', 349.99)">Bli tani</button>
+            </div></div>
+            <div class="box">
+                <video autoplay muted loop>
+                    <source src="c:\Users\User\Downloads\new.mp4.mp4" type="video/mp4">
+                </video>
+                <div class="product-card">
+                <h2>New York</h2>
+                <p>Cmimi i biletes:</p>
+                <p class="price">$99.99</p>
+                <button class="color-button" onclick="goToBooking('New York', 99.99)">Bli tani</button>
+            </div></div>
+            <div class="box">
+                <video autoplay muted loop>
+                    <source src="c:\Users\User\Downloads\dubai.mp4.mp4" type="video/mp4">
+                </video>
+                <div class="product-card">
+                <h2>Dubai</h2>
+                <p>Cmimi i biletes:</p>
+                <p class="price">$559.99</p>
+                <button class="color-button" onclick="goToBooking('Dubai', 559.99)">Bli tani</button>
+            </div></div>
+            <div class="box">
+                <video autoplay muted loop>
+                    <source src="c:\Users\User\Downloads\sing.mp4.mp4" type="video/mp4">
+                </video>
+                <div class="product-card">
+                <h2>Singapor</h2>
+                <p>Cmimi i biletes:</p>
+                <p class="price">$599.99</p>
+                <button class="color-button" onclick="goToBooking('Singapor', 599.99)">Bli tani</button>
+            </div></div>
+        </div>
+    </body>
+</html>
